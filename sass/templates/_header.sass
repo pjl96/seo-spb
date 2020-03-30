@@ -1,0 +1,89 @@
+.header
+  background: url('../img/header-bg.png') no-repeat top left
+.menu 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 2rem
+  &__nav 
+    margin-left: 6.25rem
+.logo 
+  display: flex
+  align-items: center
+  &__title 
+    text-transform: uppercase
+    color: #38393b
+    font-size: 1.625rem
+    font-weight: 700
+    line-height: 1.188rem
+    letter-spacing: 1.02px
+    margin-left: 1rem
+.nav 
+  &__item
+    color: #38393b
+    text-transform: uppercase
+    font-weight: 300
+    line-height: 2.333rem
+    margin-left: 1.563rem
+    display: inline-block
+    position: relative
+    &::after 
+      content: ''
+      position: absolute
+      top: 2rem
+      left: 50%
+      transform: translateX(-50%)
+      display: block
+      width: 0%
+      height: 2px
+      transition: width 0.3s ease-in-out
+    &:hover::after 
+      background-color: $primary
+      width: 75%
+.contacts 
+  &__phone 
+    font-size: 1.125rem
+    font-weight: 500
+    line-height: 2.333rem
+    color: #38393b
+    margin-right: 2.875rem
+  &__button 
+    padding-right: 30px
+    padding-left: 32px
+.social 
+  position: absolute
+  left: 3.5rem
+  bottom: 0
+  display: flex
+  align-items: center
+  flex-direction: column
+  &::before 
+    content: ''
+    height: 38.75rem
+    width: 4px
+    background-color: $primary
+    margin-bottom: 40px
+  &__item 
+    margin-bottom: 30px
+.hero 
+  margin-top: 21rem
+  max-width: 43rem
+  text-align: left
+  &__title 
+    font-size: 3.875rem
+    font-weight: 700
+    color: #323232
+    line-height: 4.75rem‬
+    &--primary 
+      color: $primary
+  &__text 
+    max-width: 35.2875rem
+    color: #2e2e2d
+    font-size: 1.25rem
+    font-weight: 300
+    line-height: 1.813rem
+  &__button 
+    padding-left: 38px
+    padding-right: 42px
+    margin-top: 1.5rem
+    margin-bottom: 421px
