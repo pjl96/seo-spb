@@ -21,7 +21,15 @@
       margin: 0; }
     .info__text {
       font-size: 1rem;
-      margin: 0; } }
+      margin: 0; }
+  .wpar__advantages {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .advantages__card {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+    margin-left: 5%;
+    margin-right: 5%; } }
 
 @media screen and (max-width: 768px) {
   .contacts__phone {
@@ -56,7 +64,10 @@
     min-height: 14.785rem; }
     .video__play {
       width: 70px;
-      height: 70px; } }
+      height: 70px; }
+  .advantages__card {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; } }
 
 @media screen and (max-width: 385px) {
   .header {
