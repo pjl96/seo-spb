@@ -28,6 +28,11 @@
       flex-basis: 35%
       margin-left: 5%
       margin-right: 5%
+  .services 
+    background-size: cover
+    background-position: center center
+    &__card 
+      flex-basis: 45%
 @media screen and (max-width: 768px) 
   .contacts 
     &__phone 
@@ -43,6 +48,12 @@
       margin-bottom: 13rem
   .social 
     display: none
+  .wrap__services 
+    flex-direction: column
+    align-items: center
+  .services 
+    &__card 
+      max-width: 22.187rem
 
 @media screen and (max-width: 576px) 
   .contacts 

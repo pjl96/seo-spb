@@ -1,0 +1,38 @@
+.services 
+  background: url('../img/services-bg.png') no-repeat center center / contain 
+.wrap__services 
+  display: flex
+  flex-direction: row
+  justify-content: start
+  flex-wrap: wrap
+  margin-top: 3.562rem
+.services
+  &__card 
+    position: relative
+    flex-basis: 30%
+    background-color: $light
+    border-radius: 5px
+    border: 1px solid #c9c8c8
+    margin-bottom: 2.375rem
+    margin-right: 1.5%
+    margin-left: 1.5%
+    padding: 50px 35px 50px 35px
+    &::after 
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 0%
+      height: 5px
+      border-radius: 0 0 5px 5px
+      transition: width 0.3s ease-in-out
+    &:hover::after 
+      background-color: $primary
+      width: 100%
+    &:hover 
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+      
+  &__img 
+    width: 50px
+    height: 44px
