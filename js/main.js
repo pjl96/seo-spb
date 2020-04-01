@@ -26,5 +26,16 @@ $(document).ready(function () {
       prevEl: '.cases__swiper-button-prev',
     },
   })
+  var mySwiper = new Swiper ('.reviews__swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews__swiper-button-next',
+      prevEl: '.reviews__swiper-button-prev',
+    },
+  })
 
 });

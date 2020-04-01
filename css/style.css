@@ -729,10 +729,6 @@ a:link, a:visited, a:hover {
   width: 100%;
   margin-top: 3.312rem; }
 
-.cases__swiper-slide {
-  width: 60.375rem;
-  height: 31.625rem; }
-
 .cases__swiper-button-prev, .cases__swiper-button-next {
   color: #696b69; }
 
@@ -796,6 +792,8 @@ a:link, a:visited, a:hover {
     font-weight: 400;
     font-size: 1.125rem;
     margin-left: 1.5rem; }
+  .cases__text--link {
+    color: #343435; }
 
 .cases__source {
   color: #707071;
@@ -825,6 +823,67 @@ a:link, a:visited, a:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+
+.section-title__link {
+  display: inline-block;
+  color: #ff5a3c;
+  border-bottom: 1px solid #ff5a3c; }
+
+.reviews {
+  background: url("../img/reviews-bg.png") no-repeat;
+  background-position: 0 200px; }
+  .reviews__swiper-container {
+    width: 100%; }
+  .reviews__swiper-button-prev, .reviews__swiper-button-next {
+    color: #696b69; }
+  .reviews__swiper-button-prev {
+    left: 0; }
+  .reviews__swiper-button-next {
+    right: 0; }
+  .reviews__wrap {
+    max-width: 931px;
+    width: 100%;
+    height: 23rem;
+    margin: auto;
+    background: #ffffff url("../img/feedback-bg.png") no-repeat top right;
+    padding-top: 50px; }
+  .reviews__feedback {
+    color: #0d0d0d;
+    font-size: 1.275rem;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center; }
+  .reviews__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .reviews__about {
+    margin-left: 1rem; }
+  .reviews__name {
+    color: #0d0d0d;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0; }
+  .reviews__job {
+    color: #848281;
+    font-size: 0.875rem;
+    font-weight: 400; }
+  .reviews__button {
+    padding-right: 64px;
+    padding-left: 63px; }
+    .reviews__button-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
 
 @media screen and (max-width: 1200px) {
   html {
