@@ -41,6 +41,10 @@
       max-width: 550px
       width: 100%
       padding: 0 1rem 4.8rem 1rem
+    &__title 
+      margin-left: 0
+    &__button 
+      margin-left: 0
 @media screen and (max-width: 768px) 
   .contacts 
     &__phone 
@@ -62,6 +66,11 @@
   .services 
     &__card 
       max-width: 22.187rem
+  .cases 
+    &__wrap 
+      justify-content: center
+    &__statistic 
+      display: none
 
 @media screen and (max-width: 576px) 
   .contacts 
@@ -86,6 +95,18 @@
   .advantages 
     &__card 
       flex-basis: 100%
+  .cases 
+    &__title 
+      margin-bottom: 0.5rem
+    &__text
+      font-size: 1rem
+    &__item 
+      font-size: 1rem
+    &__subtitle 
+      &:nth-of-type(n+2) 
+        margin-top: 1rem
+    &__swiper-button-prev, &__swiper-button-next 
+      --swiper-navigation-size: 2rem
 
 @media screen and (max-width: 385px) 
   .header 

@@ -15,4 +15,16 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
+  var mySwiper = new Swiper ('.cases__swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.cases__swiper-button-next',
+      prevEl: '.cases__swiper-button-prev',
+    },
+  })
+
 });
