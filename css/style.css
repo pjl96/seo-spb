@@ -876,7 +876,8 @@ a:link, a:visited, a:hover {
     font-weight: 400; }
   .reviews__button {
     padding-right: 64px;
-    padding-left: 63px; }
+    padding-left: 63px;
+    margin-top: 2rem; }
     .reviews__button-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -890,7 +891,10 @@ a:link, a:visited, a:hover {
     font-size: 13px; }
   .social {
     left: 1rem;
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem; }
+  .reviews__feedback {
+    max-width: 57rem;
+    margin: auto; } }
 
 @media screen and (max-width: 992px) {
   .menu__nav {
@@ -933,7 +937,10 @@ a:link, a:visited, a:hover {
   .price__title {
     margin-left: 0; }
   .price__button {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .reviews__feedback {
+    font-size: 1rem;
+    line-height: 2rem; } }
 
 @media screen and (max-width: 768px) {
   .contacts__phone {
@@ -997,6 +1004,9 @@ a:link, a:visited, a:hover {
   .cases__subtitle:nth-of-type(n+2) {
     margin-top: 1rem; }
   .cases__swiper-button-prev, .cases__swiper-button-next {
+    --swiper-navigation-size: 2rem; }
+  .reviews__swiper-button-prev, .reviews__swiper-button-next {
+    top: 18.5rem;
     --swiper-navigation-size: 2rem; } }
 
 @media screen and (max-width: 385px) {
@@ -1011,4 +1021,9 @@ a:link, a:visited, a:hover {
   .hero__button {
     margin-bottom: 1rem; }
   .info {
-    display: none; } }
+    display: none; }
+  .reviews {
+    background: #ffffff; }
+    .reviews__wrap {
+      padding: 1rem;
+      height: 28rem; } }
