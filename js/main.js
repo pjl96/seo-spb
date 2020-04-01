@@ -37,5 +37,16 @@ $(document).ready(function () {
       prevEl: '.reviews__swiper-button-prev',
     },
   })
+  var mySwiper = new Swiper ('.news__swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.news__swiper-button-next',
+      prevEl: '.news__swiper-button-prev',
+    },
+  })
 
 });
