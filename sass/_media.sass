@@ -5,9 +5,16 @@
     left: 1rem
     margin-bottom: 5rem
   .reviews 
+    &__wrap 
+      height: 25rem
     &__feedback 
-      max-width: 57rem
+      max-width: 60rem
       margin: auto
+  .cases 
+    &__swiper-button-prev 
+      left: 0
+    &__swiper-button-next 
+      right: 0
 
 @media screen and (max-width: 992px) 
   .menu 
@@ -53,6 +60,7 @@
     &__feedback 
       font-size: 1rem
       line-height: 2rem
+      margin: auto
 @media screen and (max-width: 768px) 
   .contacts 
     &__phone 
@@ -124,6 +132,10 @@
     &__swiper-button-prev, &__swiper-button-next 
       top: 18.5rem
       --swiper-navigation-size: 2rem
+    &__swiper-button-prev 
+      left: 0
+    &__swiper-button-next 
+      right: 0
   .news 
     display: none
 
