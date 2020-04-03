@@ -439,7 +439,7 @@ a:link, a:visited, a:hover {
   position: absolute;
   left: 0;
   top: 3.4rem;
-  font-size: 0.9rem; }
+  font-size: 0.7rem; }
 
 .price__form div.invalid {
   color: tomato;
