@@ -177,19 +177,19 @@
             <form action="#" class="price__form">
               <div class="input-group price__input-group">
                 <label for="price-user-name" class="label form__label price__label">Имя</label>
-                <input type="text" name="price-user-name" class="input form__input price__input" placeholder="Иван Иванов">
+                <input type="text" id="price-user-name" class="input form__input price__input" placeholder="Иван Иванов" name="userName">
               </div>
               <div class="input-group price__input-group">
                 <label for="price-email" class="label form__label price__label">E-mail</label>
-                <input type="mail" name="price-email" class="input form__input price__input" placeholder="ivanov@gmail.com">
+                <input type="mail" id="price-email" class="input form__input price__input" placeholder="ivanov@gmail.com" name="userEmail">
               </div>
               <div class="input-group price__input-group">
                 <label for="price-web" class="label form__label price__label">Адрес веб-сайта</label>
-                <input type="text" name="price-web" class="input form__input price__input" placeholder="tatsianapavlenko.ru">
+                <input type="text" id="price-web" class="input form__input price__input" placeholder="tatsianapavlenko.ru" name="userWeb">
               </div>
               <div class="input-group price__input-group">
                 <label for="price-mesage" class="label form__label price__label">Сообщение</label>
-                <input type="text" name="price-mesage" class="input form__input price__input" placeholder="Введите Ваше сообщение">
+                <input type="text" id="price-mesage" class="input form__input price__input" placeholder="Введите Ваше сообщение" name="userMessage">
               </div>
             </form>
             <!-- /.price__form -->
@@ -495,19 +495,19 @@
             <form action="#" class="questions__form">
               <div class="input-group questions__input-group">
                 <label for="questions-user-name" class="label form__label questions__label">Имя</label>
-                <input type="text" name="questions-user-name" class="input form__input questions__input" placeholder="Иван Иванов">
+                <input type="text" id="questions-user-name" class="input form__input questions__input" placeholder="Иван Иванов" name="userName">
               </div>
               <div class="input-group questions__input-group">
                 <label for="questions-email" class="label form__label questions__label">E-mail</label>
-                <input type="mail" name="questions-email" class="input form__input questions__input" placeholder="ivanov@gmail.com">
+                <input type="mail" id="questions-email" class="input form__input questions__input" placeholder="ivanov@gmail.com" name="userEmail">
               </div>
               <div class="input-group questions__input-group">
                 <label for="questions-phone" class="label form__label questions__label">Телефон</label>
-                <input type="text" name="questions-phone" class="input form__input questions__input" placeholder="+7 999 888 88 88">
+                <input type="tel" id="questions-phone" class="input form__input questions__input" placeholder="+7 999 888 88 88" name="userPhone">
               </div>
               <div class="input-group questions__input-group">
                 <label for="questions-mesage" class="label form__label questions__label">Сообщение</label>
-                <input type="text" name="questions-mesage" class="input form__input questions__input" placeholder="Введите Ваше сообщение">
+                <input type="text" id="questions-mesage" class="input form__input questions__input" placeholder="Введите Ваше сообщение" name="userMessage">
               </div>
             </form>
             <!-- /.question__form -->
@@ -535,6 +535,30 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <form action="send-modal.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <input type="text" class="input modal__input" placeholder="Ваше имя" id="modal-user-name" name="userName">
+        </div>
+        <div class="input-group modal__input-group">
+          <input type="tel" class="input modal__input" placeholder="Ваш номер телефона" id="modal-user-phone" name="userPhone">
+        </div>
+      </form>
+      <!-- /.form modal__form -->
+      <button class="button modal__button">Отправить</button>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal-thx">
+    <div class="modal-thx__dialog">
+      <p class="modal-thx__title">Спасибо за вашу заявку. Наш менеджер свяжется с вами в ближайшее время.
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>

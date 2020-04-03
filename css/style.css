@@ -1077,6 +1077,83 @@ a:link, a:visited, a:hover {
     font-weight: 500;
     text-align: center; }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 44, 45, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal__dialog {
+    position: relative;
+    -webkit-box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05);
+    box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05);
+    background-color: #ffffff;
+    max-width: 23.187rem;
+    width: 100%;
+    padding: 2.437rem 3.125rem 1.75rem; }
+  .modal__input {
+    border-radius: 10px;
+    border: 1px solid #b1b0b0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18px; }
+  .modal__button {
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.modal-thx {
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 44, 45, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .modal-thx--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-thx__dialog {
+    position: relative;
+    -webkit-box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05);
+    box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05);
+    background-color: #ffffff;
+    max-width: 23.187rem;
+    width: 100%;
+    padding: 2.437rem 3.125rem 1.75rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 13px; }
