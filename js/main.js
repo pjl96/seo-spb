@@ -116,6 +116,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalThx.addClass('modal-thx--visible');
+          ym(61619842,'reachGoal','form'); return true;
         }
       });
     }
@@ -157,6 +158,7 @@ $(document).ready(function () {
         success: function (response) {
           $(form)[0].reset();
           modalThx.addClass('modal-thx--visible');
+          ym(61619842,'reachGoal','form'); return true;
         }
       });
     }
@@ -204,6 +206,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalThx.addClass('modal-thx--visible');
+          ym(61619842,'reachGoal','form'); return true;
         }
       });
     }
