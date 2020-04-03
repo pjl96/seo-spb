@@ -248,13 +248,17 @@ $(document).ready(function () {
     let links = menu.find('.burger-menu__link');
     let overlay = menu.find('.burger-menu__overlay');
 
-    button.on('click', (e) => {
+    button.on('click', function(e) {
       e.preventDefault();
       toggleMenu();
     });
 
-    links.on('click', () => toggleMenu());
-    overlay.on('click', () => toggleMenu());
+    links.on('click', function() {
+      toggleMenu()
+    });
+    overlay.on('click', function() {
+      toggleMenu()
+    });
 
     function toggleMenu() {
       menu.toggleClass('burger-menu--active');
