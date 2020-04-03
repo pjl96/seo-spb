@@ -9,18 +9,33 @@
 </head>
 <body>
   
-  <header class="header">
+  <header class="header" id="start">
     <div class="container">
+
+      <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+          <span class="burger-menu__lines"></span>
+        </a>
+        <nav class="burger-menu__nav">
+          <a href="#info" class="burger-menu__link">Продвижение</a>
+          <a href="#services" class="burger-menu__link">Аудит</a>
+          <a href="#price" class="burger-menu__link">Цены</a>
+          <a href="#questions" class="burger-menu__link">Контакты</a>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+      </div>
+      <!-- /.burger-menu -->
+
       <div class="menu">
         <div class="logo">
-          <a href="#"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
-          <a class="logo__title header__logo" href="#">Saytspb</a>
+          <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
+          <a class="logo__title header__logo" href="index.html">Saytspb</a>
         </div>
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Продвижение</a>
-          <a href="#" class="nav__item">Аудит</a>
-          <a href="#" class="nav__item">Цены</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#info" class="nav__item">Продвижение</a>
+          <a href="#services" class="nav__item">Аудит</a>
+          <a href="#price" class="nav__item">Цены</a>
+          <a href="#questions" class="nav__item">Контакты</a>
         </nav>
         <!-- /.nav nav__menu -->
         <div class="contacts menu__contacts">
@@ -30,7 +45,7 @@
         <!-- /.contacts menu__contacts -->
       </div>
       <!-- /.menu -->
-      <div class="hero">
+      <div class="hero" id="hero">
         <h1 class="hero__title">
           Продвижение Сайтов<br><span class="hero__title--primary">в Санкт-Петербурге</span>
         </h1>
@@ -54,7 +69,7 @@
   <main>
     <section class="section numbers">
       <div class="container">
-        <div class="info">
+        <div class="info" id="info">
           <div class="info__item">
             <h3 class="info__title">11</h3>
             <p class="info__text">Лет на рынке</p>
@@ -128,7 +143,7 @@
     </section>
     <!-- /.section advantages -->
 
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="container">
         <div class="section-title">
           <h2 class="section-title__heading">Наши Услуги</h2>
@@ -169,7 +184,7 @@
     </section>
     <!-- /.section services -->
 
-    <section class="section price">
+    <section class="section price" id="price">
       <div class="container">
         <div class="price__wrap">
           <div class="price__wrap-form">
@@ -464,7 +479,7 @@
     </section>
     <!-- /.section news -->
 
-    <section class="section questions">
+    <section class="section questions" id="questions">
       <div class="container">
         <div class="questions__wrapper">
           <div class="questions__main">
@@ -526,8 +541,8 @@
   <footer class="footer">
     <div class="container">
       <div class="logo footer__logo">
-        <a href="#"><img src="img/logo.png" alt="Logo" class="logo__img footer__logo-img"></a>
-        <a class="logo__title logo__footer" href="#">Saytspb</a>
+        <a href="#start"><img src="img/logo.png" alt="Logo" class="logo__img footer__logo-img"></a>
+        <a class="logo__title logo__footer" href="#start">Saytspb</a>
       </div>
       <div class="footer__line"></div>
       <p class="footer__text">Copyright © 2019. Все права защищены</p>
@@ -561,6 +576,10 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+
+  <div class="scroll-top">
+    <a href="#" class="scroll-top__btn"></a>
+  </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>

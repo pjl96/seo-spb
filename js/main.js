@@ -212,4 +212,56 @@ $(document).ready(function () {
   // Маска для телефона
   $('[type=tel]').mask('+7 (000) 000-00-00');
 
+  $(".menu__nav").on("click","a", function (event) {
+    //Отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //Забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+    //Узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //Анимируем переход на расстояние - top и минус 100, за 1000мс
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
+
+  //Прокрутка страницы ввехр
+  $(function(){
+    $(window).scroll(function(){ //Функция прокрутки
+      if($(window).scrollTop() > 800) { //Если прокрутили больше 800
+        $('.scroll-top__btn').show(); //Показать кнопку
+      } else {
+        $('.scroll-top__btn').hide();  //Если нет - спрятать
+      }
+    });
+    
+    $('.scroll-top__btn').click(function(){ //Клик по кнопке
+      $('html, body').animate({scrollTop: 0}, 900); //Пролистать страницу вверх
+      return false; //Возврат значения
+    });
+  });
+
+  function burgerMenu(selector) { 
+    let menu = $(selector);
+    let button = menu.find('.burger-menu__button');
+    let links = menu.find('.burger-menu__link');
+    let overlay = menu.find('.burger-menu__overlay');
+
+    button.on('click', (e) => {
+      e.preventDefault();
+      toggleMenu();
+    });
+
+    links.on('click', () => toggleMenu());
+    overlay.on('click', () => toggleMenu());
+
+    function toggleMenu() {
+      menu.toggleClass('burger-menu--active');
+      if (menu.hasClass('burger-menu--active')) {
+        $('body').css('overflow', 'hidden');
+      } else {
+        $('body').css('overflow', 'visible');
+      }
+    }
+  }
+  burgerMenu('.burger-menu');
+
 });
