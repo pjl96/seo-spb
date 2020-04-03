@@ -734,7 +734,10 @@ a:link, a:visited, a:hover {
     padding-right: 39px;
     padding-left: 43px;
     margin-top: 1.3rem;
-    margin-left: 3.5rem;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     margin-bottom: 0.8rem; }
   .price__wrap-form {
     background: #ffffff;
