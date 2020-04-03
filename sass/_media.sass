@@ -61,6 +61,11 @@
       font-size: 1rem
       line-height: 2rem
       margin: auto
+  .questions 
+    &__heading 
+      font-size: 1.5rem
+      line-height: 25px
+
 @media screen and (max-width: 768px) 
   .contacts 
     &__phone 
@@ -92,8 +97,32 @@
       height: 500px
     &__swiper-button-prev, &__swiper-button-next 
       bottom: 4rem
+  .questions 
+    background: $light
+    &__label 
+      color: #413f3e
+    &__wrapper 
+      flex-direction: column
+      align-items: center
+    &__main 
+      width: 90%
+    &__forms 
+      width: 90%
+      margin: 0
+      margin-top: 1rem
+    &__button 
+      background-color: $primary
+      color: $light
+  .address 
+    &__item 
+      font-size: 1rem
+  .work 
+    &__days 
+      font-size: 1rem
 
 @media screen and (max-width: 576px) 
+  .section 
+    padding: 15px 0 15px 0
   .contacts 
     &__phone 
       display: none
@@ -107,6 +136,8 @@
       width: 65%
   .numbers
     height: 340px
+  .info 
+    margin-top: -8rem
   .video
     min-width: 20.285rem
     min-height: 14.785rem
@@ -139,11 +170,10 @@
   .news 
     display: none
 
-@media screen and (max-width: 385px) 
+@media screen and (max-width: 395px) 
   .header 
     background-position: top left
-  .logo 
-    &__title 
+    &__logo 
       display: none
   .hero 
     &__title 
@@ -154,6 +184,9 @@
       margin-bottom: 1rem
   .info 
     display: none
+  .video 
+    margin-top: 5rem
+    &__play 
   .reviews 
     background: $light
     &__wrap 
