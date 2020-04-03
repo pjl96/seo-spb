@@ -25,7 +25,7 @@
         <!-- /.nav nav__menu -->
         <div class="contacts menu__contacts">
           <a href="tel:+7(812)-992-10-30" class="contacts__phone">+7(812)-992-10-30</a>
-          <button class="button contacts__button">Заказать звонок</button>
+          <button class="button contacts__button" data-toggle="modal">Заказать звонок</button>
         </div>
         <!-- /.contacts menu__contacts -->
       </div>
@@ -37,7 +37,7 @@
         <p class="hero__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         </p>
-        <button class="button hero__button">Обратный звонок</button>
+        <button class="button hero__button" data-toggle="modal">Обратный звонок</button>
       </div>
       <!-- /.main-content -->
     </div>
@@ -174,14 +174,14 @@
         <div class="price__wrap">
           <div class="price__wrap-form">
             <h3 class="price__title">Узнать стоимость</h3>
-            <form action="#" class="price__form">
+            <form action="send-price.php" method="POST" class="price__form">
               <div class="input-group price__input-group">
                 <label for="price-user-name" class="label form__label price__label">Имя</label>
                 <input type="text" id="price-user-name" class="input form__input price__input" placeholder="Иван Иванов" name="userName">
               </div>
               <div class="input-group price__input-group">
                 <label for="price-email" class="label form__label price__label">E-mail</label>
-                <input type="mail" id="price-email" class="input form__input price__input" placeholder="ivanov@gmail.com" name="userEmail">
+                <input type="email" id="price-email" class="input form__input price__input" placeholder="ivanov@gmail.com" name="userEmail">
               </div>
               <div class="input-group price__input-group">
                 <label for="price-web" class="label form__label price__label">Адрес веб-сайта</label>
@@ -492,14 +492,14 @@
           <!-- /.questions__main -->
 
           <div class="questions__forms">
-            <form action="#" class="questions__form">
+            <form action="send-questions.php" method="POST" class="questions__form">
               <div class="input-group questions__input-group">
                 <label for="questions-user-name" class="label form__label questions__label">Имя</label>
                 <input type="text" id="questions-user-name" class="input form__input questions__input" placeholder="Иван Иванов" name="userName">
               </div>
               <div class="input-group questions__input-group">
                 <label for="questions-email" class="label form__label questions__label">E-mail</label>
-                <input type="mail" id="questions-email" class="input form__input questions__input" placeholder="ivanov@gmail.com" name="userEmail">
+                <input type="email" id="questions-email" class="input form__input questions__input" placeholder="ivanov@gmail.com" name="userEmail">
               </div>
               <div class="input-group questions__input-group">
                 <label for="questions-phone" class="label form__label questions__label">Телефон</label>
@@ -526,7 +526,7 @@
   <footer class="footer">
     <div class="container">
       <div class="logo footer__logo">
-        <a href="#"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
+        <a href="#"><img src="img/logo.png" alt="Logo" class="logo__img footer__logo-img"></a>
         <a class="logo__title logo__footer" href="#">Saytspb</a>
       </div>
       <div class="footer__line"></div>
@@ -540,9 +540,11 @@
     <div class="modal__dialog">
       <form action="send-modal.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
+          <label for="modal-user-name" class="label modal__label"></label>
           <input type="text" class="input modal__input" placeholder="Ваше имя" id="modal-user-name" name="userName">
         </div>
         <div class="input-group modal__input-group">
+          <label for="modal-user-phone" class="label modal__label"></label>
           <input type="tel" class="input modal__input" placeholder="Ваш номер телефона" id="modal-user-phone" name="userPhone">
         </div>
       </form>
@@ -562,6 +564,8 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
