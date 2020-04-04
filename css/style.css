@@ -389,8 +389,8 @@ a:link, a:visited, a:hover {
   font-weight: 500;
   line-height: 2.8rem; }
   .button:hover {
-    -webkit-box-shadow: 0 0 10px rgba(255, 90, 60, 0.5);
-    box-shadow: 0 0 10px rgba(255, 90, 60, 0.5); }
+    -webkit-box-shadow: 0 0 12px rgba(255, 90, 60, 0.7);
+    box-shadow: 0 0 12px rgba(255, 90, 60, 0.7); }
 
 .label {
   font-size: 1.125rem;
@@ -1157,6 +1157,9 @@ a:link, a:visited, a:hover {
     background-color: #ffffff;
     color: #ff5a3c;
     margin-top: 1.2rem; }
+    .questions__button:hover {
+      -webkit-box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.7); }
 
 .wrap {
   display: -webkit-box;
