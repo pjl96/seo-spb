@@ -8,12 +8,15 @@
     width: 42px
     height: 42px
     transition: 0.4s
+    opacity: 0.2
+  &--active &__button 
+    opacity: 1
   &__lines, &__lines::after, &__lines::before 
     position: absolute
     width: 25px
     height: 3px
     border-radius: 10px
-    background-color: $primary
+    background-color: $dark
   &__lines 
     top: 50%
     left: 50%
@@ -47,6 +50,7 @@
     background-color: $light
     height: 100%
     right: -100%
+    transition: 0.5s
   &__link 
     color: #38393b
     text-transform: uppercase
@@ -55,19 +59,6 @@
     margin-left: 1.363rem
     display: inline-block
     position: relative
-    &::after 
-      content: ''
-      position: absolute
-      top: 2rem
-      left: 50%
-      transform: translateX(-50%)
-      display: block
-      width: 0%
-      height: 2px
-      transition: width 0.3s ease-in-out
-    &:hover::after 
-      background-color: $primary
-      width: 75%
   &__overlay 
     visibility: hidden
     position: fixed
@@ -76,3 +67,4 @@
     height: 100%
     width: 100%
     z-index: 10
+    transition: 0.5s

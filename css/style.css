@@ -596,13 +596,16 @@ a:link, a:visited, a:hover {
     height: 42px;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s; }
+    transition: 0.4s;
+    opacity: 0.2; }
+  .burger-menu--active .burger-menu__button {
+    opacity: 1; }
   .burger-menu__lines, .burger-menu__lines::after, .burger-menu__lines::before {
     position: absolute;
     width: 25px;
     height: 3px;
     border-radius: 10px;
-    background-color: #ff5a3c; }
+    background-color: #2c2c2d; }
   .burger-menu__lines {
     top: 50%;
     left: 50%;
@@ -646,7 +649,10 @@ a:link, a:visited, a:hover {
     flex-direction: column;
     background-color: #ffffff;
     height: 100%;
-    right: -100%; }
+    right: -100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
   .burger-menu__link {
     color: #38393b;
     text-transform: uppercase;
@@ -655,23 +661,6 @@ a:link, a:visited, a:hover {
     margin-left: 1.363rem;
     display: inline-block;
     position: relative; }
-    .burger-menu__link::after {
-      content: '';
-      position: absolute;
-      top: 2rem;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      display: block;
-      width: 0%;
-      height: 2px;
-      -webkit-transition: width 0.3s ease-in-out;
-      -o-transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out; }
-    .burger-menu__link:hover::after {
-      background-color: #ff5a3c;
-      width: 75%; }
   .burger-menu__overlay {
     visibility: hidden;
     position: fixed;
@@ -679,7 +668,10 @@ a:link, a:visited, a:hover {
     right: 0;
     height: 100%;
     width: 100%;
-    z-index: 10; }
+    z-index: 10;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
 
 .numbers {
   background: url("../img/video-bg.png") no-repeat center/cover;
@@ -750,13 +742,24 @@ a:link, a:visited, a:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 4rem; }
+  margin-top: 3.4rem; }
 
 .advantages__card {
   -ms-flex-preferred-size: 27%;
   flex-basis: 27%;
   text-align: center;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 1.6rem;
+  margin-right: 1.6rem;
+  margin-left: 1.6rem; }
+
+.advantages__title {
+  font-size: 1.25rem;
+  margin-bottom: 0; }
+
+.advantages__text {
+  font-weight: 300;
+  margin-top: 0.6rem;
+  line-height: 22px; }
 
 .services {
   background: url("../img/services-bg.png") no-repeat center center/contain; }
@@ -807,6 +810,14 @@ a:link, a:visited, a:hover {
   .services__card:hover {
     -webkit-box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
     box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05); }
+
+.services__title {
+  font-size: 1.625rem;
+  font-weight: 500; }
+
+.services__text {
+  line-height: 25.33px;
+  font-size: 1rem; }
 
 .services__img {
   width: 50px;
@@ -1348,6 +1359,14 @@ a:link, a:visited, a:hover {
     .services__card {
       -ms-flex-preferred-size: 45%;
       flex-basis: 45%; }
+      .services__card:hover::after {
+        width: 0; }
+      .services__card:hover {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+  .button:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   .price__wrap {
     background: none; }
   .price__wrap-form {
@@ -1425,7 +1444,7 @@ a:link, a:visited, a:hover {
     .questions__forms {
       width: 90%;
       margin: 0;
-      margin-top: 1rem; }
+      margin-top: 2rem; }
     .questions__button {
       background-color: #ff5a3c;
       color: #ffffff; }
@@ -1437,6 +1456,8 @@ a:link, a:visited, a:hover {
 @media screen and (max-width: 576px) {
   .section {
     padding: 15px 0 15px 0; }
+  .burger-menu__button {
+    right: 0; }
   .contacts__phone {
     display: none; }
   .contacts__button {
@@ -1485,6 +1506,8 @@ a:link, a:visited, a:hover {
     display: none; } }
 
 @media screen and (max-width: 395px) {
+  .burger-menu__button {
+    right: -7.5px; }
   .header {
     background-position: top left; }
     .header__logo {

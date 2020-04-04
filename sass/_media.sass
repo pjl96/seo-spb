@@ -46,6 +46,13 @@
     background-position: center center
     &__card 
       flex-basis: 45%
+      &:hover::after 
+        width: 0
+      &:hover 
+        box-shadow: none
+  .button 
+    &:hover 
+      box-shadow: none
   .price 
     &__wrap 
       background: none
@@ -117,7 +124,7 @@
     &__forms 
       width: 90%
       margin: 0
-      margin-top: 1rem
+      margin-top: 2rem
     &__button 
       background-color: $primary
       color: $light
@@ -131,6 +138,9 @@
 @media screen and (max-width: 576px) 
   .section 
     padding: 15px 0 15px 0
+  .burger-menu 
+    &__button 
+      right: 0  
   .contacts 
     &__phone 
       display: none
@@ -183,6 +193,9 @@
     display: none
 
 @media screen and (max-width: 395px) 
+  .burger-menu 
+    &__button 
+      right: -7.5px
   .header 
     background-position: top left
     &__logo 
