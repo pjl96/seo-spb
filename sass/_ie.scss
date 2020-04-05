@@ -3,12 +3,22 @@
     margin-top: 7rem;
   }
   .services__card {
-    flex-basis: 24%;
+    flex-basis: 30%;
   }
   .cases__swiper-button-prev, .reviews__swiper-button-prev {
-    background: url('../img/slider-prev.png');
+    background: url('../img/slider-prev.png') no-repeat center;
+    width: 23px;
+    height: 43px;
   }
   .cases__swiper-button-next, .reviews__swiper-button-next {
-    background: url('../img/slider-next.png');
+    background: url('../img/slider-next.png') no-repeat center;
+    width: 23px;
+    height: 43px;
+  }
+  .cases__swiper-button-next::after, 
+  .cases__swiper-button-prev::after,
+  .reviews__swiper-button-next::after, 
+  .reviews__swiper-button-prev::after {
+    display: none;
   }
 }
