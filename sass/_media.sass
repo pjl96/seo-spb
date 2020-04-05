@@ -1,3 +1,6 @@
+@media screen and (max-width: 1300px) 
+  .nav 
+    margin-left: 0
 @media screen and (max-width: 1200px) 
   html 
     font-size: 13px
@@ -26,11 +29,13 @@
     margin-left: 1rem
   .info 
     flex-wrap: wrap
+    margin-top: -12rem
     &__item 
       flex-basis: 50%
     &__title
       font-size: 2rem
       margin: 0
+      margin-bottom: -1.5rem
     &__text 
       font-size: 1rem
       margin: 0
@@ -50,6 +55,12 @@
         width: 0
       &:hover 
         box-shadow: none
+      &:nth-child(3)
+        margin-left: 0
+        margin-right: 3.5%
+      &:nth-child(5)
+        margin-left: 0
+        margin-right: 3.5%
   .button 
     &:hover 
       box-shadow: none
@@ -99,6 +110,16 @@
   .services 
     &__card 
       max-width: 22.187rem
+      width: 100%
+      &:nth-child(2)
+        margin-left: 0
+        margin-right: 0
+      &:nth-child(3)
+        margin-left: 0
+        margin-right: 0
+      &:nth-child(5)
+        margin-left: 0
+        margin-right: 0
   .cases 
     &__wrap 
       justify-content: center
@@ -193,9 +214,6 @@
     display: none
 
 @media screen and (max-width: 395px) 
-  .burger-menu 
-    &__button 
-      right: -7.5px
   .header 
     background-position: top left
     &__logo 

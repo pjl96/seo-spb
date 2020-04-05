@@ -1,0 +1,9 @@
+@-moz-document url-prefix()
+{
+  .input {
+    padding-bottom: 10px;
+  }
+  .input::placeholder {
+    opacity: 1;
+  } 
+}

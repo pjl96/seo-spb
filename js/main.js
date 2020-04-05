@@ -2,10 +2,16 @@ $(document).ready(function () {
   var modal = $('.modal');
   var modalThx = $('.modal-thx');
   var modalBtn = $('[data-toggle=modal]');
+  var closeBtn = $('.modal-thx__close');
 
   // Обработка клика по кнопке и вызов модального окна
   modalBtn.on('click', function() {
     modal.toggleClass('modal--visible');
+  });
+
+  // Обработка клика по крестику и скрытие модального окна
+  closeBtn.on('click', function () {
+    modalThx.removeClass('modal-thx--visible');
   });
 
   // Обработка нажатия клавиши Esc

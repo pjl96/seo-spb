@@ -53,6 +53,16 @@
   &--visible 
     opacity: 1
     visibility: visible
+  &__close 
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center 
+    border: none
+    margin: 12px
+    cursor: pointer
   &__dialog 
     position: relative
     box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05)
@@ -60,3 +70,5 @@
     max-width: 23.187rem
     width: 100%
     padding: 2.437rem 3.125rem 1.75rem
+  &__title 
+    text-align: center

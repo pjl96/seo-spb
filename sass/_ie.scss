@@ -5,4 +5,10 @@
   .services__card {
     flex-basis: 24%;
   }
+  .cases__swiper-button-prev, .reviews__swiper-button-prev {
+    background: url('../img/slider-prev.png');
+  }
+  .cases__swiper-button-next, .reviews__swiper-button-next {
+    background: url('../img/slider-next.png');
+  }
 }

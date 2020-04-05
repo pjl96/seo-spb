@@ -7,16 +7,30 @@
   flex-wrap: wrap
   margin-top: 3.562rem
 .services
+  padding-top: 1rem
+  &__section-title 
+    margin-bottom: 1.7rem
+  &__discription
+    width: 19rem
+    &-title
+      max-width: 50rem
+  &__wrapper 
+    width: 19rem
+    margin: 0 auto
   &__card 
     position: relative
-    flex-basis: 30%
+    flex-basis: 31%
     background-color: $light
     border-radius: 5px
     border: 1px solid #c9c8c8
     margin-bottom: 2.375rem
-    margin-right: 1.5%
-    margin-left: 1.5%
-    padding: 50px 35px 50px 35px
+    padding: 45px 0 22px 0
+    &:nth-child(2)
+      margin-left: 3.5%
+      margin-right: 3.5%
+    &:nth-child(5)
+      margin-left: 3.5%
+      margin-right: 3.5%
     &::after 
       content: ''
       position: absolute
@@ -32,13 +46,16 @@
       width: 100%
     &:hover 
       box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+    
   &__title 
     font-size: 1.625rem
     font-weight: 500
+    margin-bottom: 1.3rem
+    margin-top: 1.4rem
   &__text 
     line-height: 25.33px
     font-size: 1rem
-      
+    font-weight: 300
   &__img 
     width: 50px
     height: 44px
