@@ -764,7 +764,9 @@ a:link, a:visited, a:hover {
     line-height: 22px; }
 
 .services {
-  background: url("../img/services-bg.png") no-repeat center center/contain; }
+  background: url("../img/services-bg.png") no-repeat;
+  background-position: center 11rem;
+  padding-bottom: 12.6rem; }
 
 .wrap__services {
   display: -webkit-box;
