@@ -1383,7 +1383,9 @@ a:link, a:visited, a:hover {
   .cases__swiper-button-prev {
     left: 0; }
   .cases__swiper-button-next {
-    right: 0; } }
+    right: 0; }
+  .modal__form div.invalid {
+    top: 3.8rem; } }
 
 @media screen and (max-width: 992px) {
   .menu__nav {

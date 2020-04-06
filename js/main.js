@@ -231,6 +231,16 @@ $(document).ready(function () {
     //Анимируем переход на расстояние - top и минус 100, за 1000мс
     $('body,html').animate({scrollTop: top}, 1000);
   });
+  $(".burger-menu__nav").on("click","a", function (event) {
+    //Отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //Забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+    //Узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //Анимируем переход на расстояние - top и минус 100, за 1000мс
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
 
   //Прокрутка страницы ввехр
   $(function(){
